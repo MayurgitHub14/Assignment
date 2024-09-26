@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<title>Assignment</title>
+		<script src="script.js"></script>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+			}
+
+			/* Styling for the title */
+			b {
+				display: block;
+				font-size: 24px;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+
+			/* Center form */
+			span {
+				display: block;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			/* Input fields styled to look like blank lines */
+			input[type="text"],
+			input[type="tel"],
+			input[type="email"] {
+				border: none;
+				border-bottom: 2px solid black; /* Creates the blank line effect */
+				outline: none;
+				font-size: 18px;
+				width: 200px; /* Adjust width as needed */
+				padding: 5px;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+
+			/* Input field placeholder style (optional) */
+			input[type="text"]::placeholder,
+			input[type="tel"]::placeholder,
+			input[type="email"]::placeholder {
+				color: #999;
+				text-align: center;
+			}
+
+			/* Image styling */
+			img {
+				display: block;
+				margin: 10px auto;
+				width: 50px;
+				height: auto;
+			}
+
+			/* Table styling */
+			table {
+				margin: 0 auto;
+				border-collapse: collapse;
+				width: 80%;
+			}
+
+			td,
+			th {
+				border: 1px solid #ddd;
+				padding: 8px;
+				text-align: center;
+			}
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+
+			tr:hover {
+				background-color: #ddd;
+			}
+
+			th {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				background-color: #4caf50;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<b>DONATE A BOOK</b>
+
+		<!-- Form with underlined blank-like input fields -->
+		<span>
+			<form id="user-form">
+				<label for="#name">NAME</label>
+				<input type="text" id="name" required />
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+
+				<label for="#phone">PHONE</label>
+				<input type="tel" id="phone" required />
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				<label for="#email">EMAIL</label>
+				<input type="email" id="email" required />
+				<br />
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp;
+				<img
+					src="https://cdn-icons-png.flaticon.com/128/3032/3032220.png"
+					align="left"
+					alt="Book icon"
+				/>
+			</form>
+		</span>
+
+		<!-- Book image -->
+		<div>
+			<!-- <img
+				src="https://cdn-icons-png.flaticon.com/128/3032/3032220.png"
+				align="left"
+				alt="Book icon"
+			/> -->
+		</div>
+
+		<!-- Book list table -->
+		<table>
+			<tr>
+				<th>S No.</th>
+				<th>Book Title</th>
+				<th>Author</th>
+				<th>Genre</th>
+				<th>Year of publication</th>
+				<th>ISBN</th>
+				<th>Action</th>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Fifty Shades of Grey</td>
+				<td>E.L. James</td>
+				<td>1st</td>
+				<td>2011</td>
+				<td></td>
+				<td>
+					<img
+						src="https://cdn-icons-png.flaticon.com/128/1827/1827933.png"
+						alt="Edit icon"
+					/>
+					<img
+						src="https://img.icons8.com/?size=80&id=QVlG1NlFBlco&format=png"
+						alt="Delete icon"
+					/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>2</td>
+				<td>Origin</td>
+				<td>Dan Brown</td>
+				<td>1st</td>
+				<td>2015</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>3</td>
+				<td>Gone Girl</td>
+				<td>Gillian Flynn</td>
+				<td>1st</td>
+				<td>2012</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

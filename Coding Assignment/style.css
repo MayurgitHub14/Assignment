@@ -1,0 +1,28 @@
+/* Example styles */
+form, table {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  input, button {
+    margin: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td, tr {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  td[contenteditable="true"] {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
